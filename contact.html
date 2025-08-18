@@ -11,15 +11,82 @@
     <title>Contact</title>
   </head>
   <body>
-    <h1>Contact</h1>
-    <nav>
-      <a href="index.html">Acasa</a>
-      <a href="despre_noi.html">Despre noi</a>
-      <a href="servicii.html">Servicii</a>
-      <a href="galerie.html">Galerie</a>
-      <a href="workshop.html">Workshop</a>
-      <a href="doneaza.html">Implica-te</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <header>
+      <h1>Contact</h1>
+      <nav>
+        <a href="index.html">Acasa</a>
+        <a href="despre_noi.html">Despre noi</a>
+        <a href="servicii.html">Servicii</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="workshop.html">Workshop</a>
+        <a href="doneaza.html">Implica-te</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Date de contact</h2>
+        <ul>
+          <li>Telefon: 0747 309 849</li>
+          <li>Email: office@.......</li>
+          <li>
+            Adresă: Aleea Parva nr 8, bl A35, sc B, et 1, ap 20, sector 6,
+            București
+          </li>
+          <li>Program: Luni - Vineri, 8:00 - 18:00</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Trimite un mesaj</h2>
+        <form action="#" method="post">
+          <label for="nume">Nume:</label><br />
+          <input type="text" id="nume" name="nume" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="subiect">Subiect:</label><br />
+          <select id="subiect" name="subiect">
+            <option value="informatii">Informații generale</option>
+            <option value="sprijin">Cerere sprijin/terapie</option>
+            <option value="voluntariat">Voluntariat</option>
+            <option value="donatii">Donează</option></select
+          ><br /><br />
+
+          <label for="mesaj">Mesaj:</label><br />
+          <textarea
+            id="mesaj"
+            name="mesaj"
+            rows="5"
+            cols="30"
+            required
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Trimite</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Ne găsești aici</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.704052239665!2d26.117232215532203!3d44.42676707910226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff37b5b0f88b%3A0xa0b8f3d3c6d3c0e3!2sStrada%20Semenic%2010%2C%20București!5e0!3m2!1sro!2sro!4v1690209341234"
+          width="300"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Contact: 0747 309 849 | office@....... | Aleea Parva nr 8, bl A35, sc B,
+        et 1, ap 20, sector 6, București
+      </p>
+      <p>&copy; 2025 AutisticMinds. Toate drepturile rezervate.</p>
+    </footer>
   </body>
 </html>
