@@ -1,0 +1,64 @@
+body {
+  background-color: #fef6e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fata {
+  width: 200px;
+  height: 200px;
+  background-color: #fcd5ce;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ochi */
+
+.ochi {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+}
+
+.ochi.stanga {
+  left: 50px;
+}
+
+.ochi.dreapta {
+  right: 50px;
+  animation: wink 2s infinite;
+}
+
+/* Gura */
+
+.gura {
+  width: 80px;
+  height: 40px;
+  border-bottom: 5px solid #000;
+  border-radius: 0 0 40px 40px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Animație clipit */
+
+@keyframes wink {
+  0%,
+  90%,
+  100% {
+    height: 30px;
+    border-radius: 50%;
+  }
+  95% {
+    height: 5px;
+    border-radius: 5px;
+  }
+}
