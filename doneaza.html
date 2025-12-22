@@ -1,76 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="implica-te.css" />
+    <title>Implica-te - Autistic Minds</title>
     <link
       rel="shortcut icon"
-      href="../assets/favicons/doneaza.png"
+      href="assets/favicons/doneaza.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Implica-te</title>
   </head>
   <body>
-    <header>
-      <h1>Implica-te</h1>
-      <nav>
-        <a href="index.html">Acasa</a>
-        <a href="despre_noi.html">Despre noi</a>
-        <a href="servicii.html">Servicii</a>
-        <a href="galerie.html">Galerie</a>
-        <a href="workshop.html">Workshop</a>
-        <a href="doneaza.html">Implica-te</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-    <section id="implica-te">
-      <h2>Implică-te</h2>
+    <div class="container">
+      <header class="antet">
+        <div class="titlu">
+          <h1 class="title">Autistic Minds</h1>
+        </div>
+        <div class="navigatie">
+          <nav class="navigation">
+            <a href="index.html">Acasa</a>
+            <a href="despre_noi.html">Despre noi</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="workshop.html">Workshop</a>
+            <a href="doneaza.html">Implica-te</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
 
-      <h3>Voluntariat</h3>
-      <p>
-        Dacă vrei să lucrezi cu copiii sau să ne ajuți la strângerea de fonduri,
-        te invităm să ne trimiți CV-ul tău.
-      </p>
-      <form action="upload_cv.php" method="post" enctype="multipart/form-data">
-        <label for="nume">Nume complet:</label><br />
-        <input type="text" id="nume" name="nume" required /><br /><br />
+      <main>
+        <section id="implica-te">
+          <h2>Cum te poți implica</h2>
 
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+          <!-- Container pentru cardurile aliniate -->
+          <div class="implica-te-container">
+            <!-- Card Voluntariat -->
+            <div class="implica-te-card">
+              <h3>Voluntariat</h3>
+              <p>
+                Dacă vrei să lucrezi cu copiii sau să ne ajuți la strângerea de
+                fonduri, te invităm să ne trimiți CV-ul tău.
+              </p>
+              <form
+                action="upload_cv.php"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <label for="nume">Nume complet:</label>
+                <input type="text" id="nume" name="nume" required />
 
-        <label for="cv">Încarcă CV (PDF):</label><br />
-        <input
-          type="file"
-          id="cv"
-          name="cv"
-          accept=".pdf"
-          required
-        /><br /><br />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
 
-        <button type="submit">Trimite CV</button>
-      </form>
+                <label for="cv">Încarcă CV (PDF):</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required />
 
-      <h3>Donează</h3>
-      <p>Susține activitatea noastră și copiii cu autism prin donații.</p>
-      <a href="pagina_donatii.html" class="btn-donatii">Donează acum</a
-      ><br /><br />
+                <button type="submit">Trimite CV</button>
+              </form>
+            </div>
 
-      <h3>Formular 230</h3>
-      <p>
-        Poți descărca și completa Formularul 230 pentru a ne susține prin
-        redirecționarea a 3.5% din impozitul tău.
-      </p>
-      <a href="formular_230.pdf" target="_blank" download
-        >Descarcă Formularul 230 (PDF)</a
-      >
-    </section>
-    <footer>
-      <p>
-        Contact: 0747 309 894 | office@....... | Aleea Parva nr 8, bl A35, sc B,
-        et 1, ap 20, sector 6, București
-      </p>
-      <p>&copy; 2025 AutisticMinds. Toate drepturile rezervate.</p>
-    </footer>
+            <!-- Card Donează + Formular 230 -->
+            <div class="implica-te-cards-right">
+              <!-- Card Donează -->
+              <div class="implica-te-card">
+                <h3>Donează</h3>
+                <p>
+                  Sprijină activitatea noastră și copiii cu autism prin donații.
+                </p>
+                <p>
+                  Fiecare donație contribuie la oferirea de sesiuni de terapie,
+                  suport educațional și activități de integrare socială pentru
+                  copiii cu autism.
+                </p>
+                <p>
+                  Împreună, putem transforma viețile acestor copii și le putem
+                  oferi oportunități care le vor schimba viitorul.
+                </p>
+                <a href="pagina_donatii.html" class="btn">Donează acum</a>
+              </div>
+
+              <!-- Card Formular 230 -->
+              <div class="implica-te-card-small">
+                <h3>Formular 230</h3>
+                <p>
+                  Poți descărca și completa Formularul 230 pentru a ne susține
+                  prin redirecționarea a 3.5% din impozitul tău.
+                </p>
+                <a href="formular_230.pdf" target="_blank" download
+                  >Descarcă Formularul 230</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Contact: 0747 309 894 | office@....... | Aleea Parva nr 8, bl A35, sc
+          B, et 1, ap 20, sector 6, București
+        </p>
+        <p>&copy; 2025 AutisticMinds. Toate drepturile rezervate.</p>
+      </footer>
+    </div>
   </body>
 </html>
