@@ -38,9 +38,9 @@ header.antet {
 }
 
 header.antet nav a {
-  color: white;
-  margin-left: 1rem;
   text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 .navigatie {
   display: flex;
@@ -90,7 +90,6 @@ header.antet nav a {
 }
 
 .container_despre ul li::before {
-  content: "✔️ ";
   margin-right: 0.5rem;
   color: #0074d9;
 }
@@ -165,7 +164,7 @@ section {
 }
 
 .btn:hover {
-  background-color: #004b80;
+  background-color: #007acc;
 }
 
 .despre-noi-container .text {
@@ -237,7 +236,7 @@ section {
   margin-right: 20px;
 }
 .section-orizontal .imagine img {
-  max-width: 320px;
+  max-width: 385px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -282,7 +281,7 @@ section {
 }
 
 #Implica-te a:hover {
-  background-color: #003f66;
+  background-color: #007acc;
 }
 /* footer {
   position: fixed;
@@ -428,11 +427,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem; /* Spațiu între secțiuni */
+  gap: 2rem;
   padding: 2.5rem 2rem;
   margin: 3rem auto;
   max-width: 100%;
-  width: 80%; /* Ajustăm lățimea */
+  width: 80%;
   background-color: #ffffff;
   border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -483,7 +482,7 @@ footer {
   color: #555;
 }
 
-/* Stilizarea formularului de înscriere */
+/* Stilizarea formularului de inscriere */
 .workshop-form {
   display: flex;
   flex-direction: column;
@@ -498,9 +497,8 @@ footer {
   font-family: inherit;
 }
 
-/* Stilul butonului de submit */
 .workshop-form button[type="submit"] {
-  background-color: #00aaff;
+  background-color: #005f99;
   border: none;
   padding: 0.8rem 1.5rem;
   font-size: 1.1rem;
@@ -514,7 +512,6 @@ footer {
   background-color: #007acc;
 }
 
-/* Efecte hover pentru card */
 .card:hover {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
@@ -531,10 +528,10 @@ header.antet nav a {
 }
 
 header.antet nav a:hover {
-  color: #00aaff;
+  font-weight: bold;
+  color: white;
 }
 
-/* Responsivitate pentru cardul de înscriere pe ecrane mici */
 @media (max-width: 900px) {
   .inscriere-card {
     flex-direction: column;
@@ -551,7 +548,6 @@ header.antet nav a:hover {
   }
 }
 
-/* Grid pentru carduri Evenimente Anterioare */
 .event-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -559,7 +555,6 @@ header.antet nav a:hover {
   margin-top: 2rem;
 }
 
-/* Cardurile pentru evenimente */
 .event-card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -575,7 +570,6 @@ header.antet nav a:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Stilul interior al cardului */
 .card-content {
   padding: 1.5rem;
 }
@@ -597,21 +591,18 @@ header.antet nav a:hover {
   margin-top: 1rem;
 }
 
-/* Responsivitate - Grilă de 2 carduri pe ecrane mai mici */
 @media (max-width: 900px) {
   .event-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsivitate - 1 card pe ecrane foarte mici */
 @media (max-width: 600px) {
   .event-grid {
     grid-template-columns: 1fr;
   }
 }
 
-/* Grid pentru carduri Evenimente Viitoare */
 .event-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -619,7 +610,6 @@ header.antet nav a:hover {
   margin-top: 2rem;
 }
 
-/* Cardurile pentru evenimente viitoare */
 .event-card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -635,7 +625,6 @@ header.antet nav a:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Stilul interior al cardului */
 .card-content {
   padding: 1.5rem;
 }
@@ -665,14 +654,12 @@ header.antet nav a:hover {
   text-decoration: none;
 }
 
-/* Responsivitate - Grilă de 2 carduri pe ecrane mai mici */
 @media (max-width: 900px) {
   .event-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsivitate - 1 card pe ecrane foarte mici */
 @media (max-width: 600px) {
   .event-grid {
     grid-template-columns: 1fr;
@@ -750,7 +737,7 @@ header.antet nav a:hover {
 }
 
 .implica-te-card button:hover {
-  background-color: #004b80;
+  background-color: #007acc;
 }
 
 .implica-te-card button:focus {
@@ -819,7 +806,7 @@ header.antet nav a:hover {
 
 #contact-header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1rem;
 }
 
@@ -827,26 +814,26 @@ header.antet nav a:hover {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #contact-header nav a:hover {
-  color: #00aaff;
+  font-weight: bold;
+  color: white;
 }
 
 /* Contact Form Section */
 #contact-form-section {
   display: flex;
   justify-content: space-between;
-  gap: 4rem; /* Mărim distanța dintre cele două carduri */
+  gap: 4rem;
   margin: 3rem auto;
   max-width: 1100px;
   padding: 1rem;
 }
 
-/* Form Styling - Lățimea formularului mai mare */
 .form-container {
-  width: 55%; /* Formularul va ocupa 55% din lățimea secțiunii */
+  width: 55%;
   background-color: #e0f3ff;
   padding: 1.5rem;
   border-radius: 8px;
@@ -871,11 +858,11 @@ header.antet nav a:hover {
 
 .form-field input,
 .form-field textarea {
-  width: 100%; /* Asigurăm că inputurile și textarea-ul sunt complet aliniate */
+  width: 100%;
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  box-sizing: border-box; /* Ne asigurăm că padding-ul nu depășește lățimea */
+  box-sizing: border-box;
 }
 
 .form-field textarea {
@@ -884,7 +871,7 @@ header.antet nav a:hover {
 }
 
 button {
-  background-color: #00aaff;
+  background-color: #005f99;
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -898,11 +885,10 @@ button:hover {
   background-color: #007acc;
 }
 
-/* Address Section - Card mai scurt */
 .address-container {
-  width: 40%; /* Cardul cu adresa va ocupa 40% din lățimea secțiunii */
+  width: 40%;
   background-color: #e0f3ff;
-  padding: 1rem; /* Reducem padding-ul pentru a-l face mai scurt */
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
@@ -936,21 +922,6 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-/* Footer */
-footer {
-  background-color: #0074d9;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  margin-top: 3rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Responsivitate pentru ecrane mici */
 @media (max-width: 768px) {
   #contact-form-section {
     flex-direction: column;
@@ -959,11 +930,23 @@ footer p {
 
   .form-container,
   .address-container {
-    width: 90%; /* Cardurile vor ocupa mai mult spațiu pe ecrane mici */
+    width: 90%;
     margin-bottom: 1rem;
   }
 
   iframe {
     height: 250px;
   }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gif-navbar {
+  width: 50px; /* Poți ajusta dimensiunea în funcție de preferințe */
+  height: auto; /* Păstrează proporțiile GIF-ului */
+  margin-left: 10px; /* Adaugă un spațiu între GIF și elementele din navbar */
 }
