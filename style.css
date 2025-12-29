@@ -112,6 +112,10 @@ header.antet nav a {
   font-weight: bold;
   margin: 1rem 0;
 }
+.title {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
 
 #intro {
   background: #f0f8ff;
@@ -946,7 +950,31 @@ button:hover {
 }
 
 .gif-navbar {
-  width: 50px; /* Poți ajusta dimensiunea în funcție de preferințe */
-  height: auto; /* Păstrează proporțiile GIF-ului */
-  margin-left: 10px; /* Adaugă un spațiu între GIF și elementele din navbar */
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.service-details {
+  display: none;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #00aaff;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.service-category button {
+  margin-bottom: 1rem;
+  background-color: #005f99;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-category button:hover {
+  background-color: #007acc;
 }
