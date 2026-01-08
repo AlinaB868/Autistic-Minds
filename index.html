@@ -19,34 +19,58 @@
   <body>
     <div class="container">
       <header class="antet">
-        <!-- <figure>
-        <img
-          src="favicons/services.png"
-          alt="Logo Autistic"
-          width="50px"
-        />
-      </figure> -->
         <div class="titlu">
+          <img
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmhhMThrbGQwMTQ0am4wdm94cTY4YnVoeWtiNm9lY2JxdDY1am1nZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WDoSHkQlp5RcCj6cjZ/giphy.gif"
+            alt="Autism GIF"
+            class="gif-navbar"
+          />
           <h1 class="title animate__animated animate__fadeInDown">
             Autistic Minds
           </h1>
         </div>
-        <div class="navigatie">
-          <nav class="navigation">
-            <a href="index.html">Acasa</a>
-            <a href="despre_noi.html">Despre noi</a>
-            <a href="servicii.html">Servicii</a>
-            <a href="galerie.html">Galerie</a>
-            <a href="workshop.html">Workshop</a>
-            <a href="doneaza.html">Implica-te</a>
-            <a href="contact.html">Contact</a>
-            <img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmhhMThrbGQwMTQ0am4wdm94cTY4YnVoeWtiNm9lY2JxdDY1am1nZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WDoSHkQlp5RcCj6cjZ/giphy.gif"
-              alt="Autism GIF"
-              class="gif-navbar"
-            />
-          </nav>
-        </div>
+        <nav class="navigation">
+          <button class="hamburger" aria-label="Deschide meniul">
+            &#9776;
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" title="Acasă"
+                >🏠 <span class="link-text">Acasă</span></a
+              >
+            </li>
+            <li>
+              <a href="despre_noi.html" title="Despre noi"
+                >👥 <span class="link-text">Despre noi</span></a
+              >
+            </li>
+            <li>
+              <a href="servicii.html" title="Servicii"
+                >🛠 <span class="link-text">Servicii</span></a
+              >
+            </li>
+            <li>
+              <a href="galerie.html" title="Galerie"
+                >🖼 <span class="link-text">Galerie</span></a
+              >
+            </li>
+            <li>
+              <a href="workshop.html" title="Workshop"
+                >🎓 <span class="link-text">Workshop</span></a
+              >
+            </li>
+            <li>
+              <a href="doneaza.html" title="Implica-te"
+                >🤝 <span class="link-text">Implica-te</span></a
+              >
+            </li>
+            <li>
+              <a href="contact.html" title="Contact"
+                >✉️ <span class="link-text">Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>
         <section id="intro">
@@ -137,14 +161,16 @@
           </div>
         </section>
 
-        <section id="Implica-te">
-          <h2>Implică-te</h2>
-          <p>
-            Sprijină campania noastră dedicată creșterii accesului la terapii
-            pentru copii. Fiecare contribuție contează pentru a oferi șanse
-            egale tuturor copiilor!
-          </p>
-          <a href="doneaza.html">Detalii</a>
+        <section id="Implica-te" class="implica-te-section">
+          <div class="implica-te-container index-implica-te">
+            <h2>Implică-te</h2>
+            <p>
+              Sprijină campania noastră dedicată creșterii accesului la terapii
+              pentru copii. Fiecare contribuție contează pentru a oferi șanse
+              egale tuturor copiilor!
+            </p>
+            <a href="doneaza.html" class="btn">Detalii</a>
+          </div>
         </section>
       </main>
 
@@ -156,5 +182,13 @@
         <p>&copy; 2025 AutisticMinds. Toate drepturile rezervate.</p>
       </footer>
     </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>

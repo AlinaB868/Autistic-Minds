@@ -1,10 +1,7 @@
-function toggleDetails(serviceId) {
-  var serviceDetails = document.getElementById(serviceId);
+function toggleDetails(id) {
+  document.querySelectorAll(".service-details").forEach((el) => {
+    if (el.id !== id) el.classList.remove("show");
+  });
 
-  // Verifică dacă secțiunea este deja vizibilă
-  if (serviceDetails.style.display === "block") {
-    serviceDetails.style.display = "none"; // Ascunde detaliile
-  } else {
-    serviceDetails.style.display = "block"; // Afișează detaliile
-  }
+  document.getElementById(id).classList.toggle("show");
 }

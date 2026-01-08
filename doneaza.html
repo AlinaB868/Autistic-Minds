@@ -19,36 +19,65 @@
     <div class="container">
       <header class="antet">
         <div class="titlu">
+          <img
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmhhMThrbGQwMTQ0am4wdm94cTY4YnVoeWtiNm9lY2JxdDY1am1nZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WDoSHkQlp5RcCj6cjZ/giphy.gif"
+            alt="Autism GIF"
+            class="gif-navbar"
+          />
           <h1 class="title animate__animated animate__fadeInDown">
             Implică-te
           </h1>
         </div>
-        <div class="navigatie">
-          <nav class="navigation">
-            <a href="index.html">Acasa</a>
-            <a href="despre_noi.html">Despre noi</a>
-            <a href="servicii.html">Servicii</a>
-            <a href="galerie.html">Galerie</a>
-            <a href="workshop.html">Workshop</a>
-            <a href="doneaza.html">Implica-te</a>
-            <a href="contact.html">Contact</a>
-            <img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmhhMThrbGQwMTQ0am4wdm94cTY4YnVoeWtiNm9lY2JxdDY1am1nZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WDoSHkQlp5RcCj6cjZ/giphy.gif"
-              alt="Autism GIF"
-              class="gif-navbar"
-            />
-          </nav>
-        </div>
+        <nav class="navigation">
+          <button class="hamburger" aria-label="Deschide meniul">
+            &#9776;
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" title="Acasă"
+                >🏠 <span class="link-text">Acasă</span></a
+              >
+            </li>
+            <li>
+              <a href="despre_noi.html" title="Despre noi"
+                >👥 <span class="link-text">Despre noi</span></a
+              >
+            </li>
+            <li>
+              <a href="servicii.html" title="Servicii"
+                >🛠 <span class="link-text">Servicii</span></a
+              >
+            </li>
+            <li>
+              <a href="galerie.html" title="Galerie"
+                >🖼 <span class="link-text">Galerie</span></a
+              >
+            </li>
+            <li>
+              <a href="workshop.html" title="Workshop"
+                >🎓 <span class="link-text">Workshop</span></a
+              >
+            </li>
+            <li>
+              <a href="doneaza.html" title="Implica-te"
+                >🤝 <span class="link-text">Implica-te</span></a
+              >
+            </li>
+            <li>
+              <a href="contact.html" title="Contact"
+                >✉️ <span class="link-text">Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
       </header>
-
       <main>
         <section id="implica-te">
-          <h2>Cum te poți implica</h2>
+          <h2>Implica-te în activitățile noastre</h2>
 
-          <!-- Container pentru cardurile aliniate -->
           <div class="implica-te-container">
-            <!-- Card Voluntariat -->
-            <div class="implica-te-card">
+            <!-- CARD mare stânga: Voluntariat -->
+            <div class="implica-te-card voluntariat">
               <h3>Voluntariat</h3>
               <p>
                 Dacă vrei să lucrezi cu copiii sau să ne ajuți la strângerea de
@@ -65,49 +94,44 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required />
 
-                <label for="cv">Încarcă CV (PDF):</label>
-                <input type="file" id="cv" name="cv" accept=".pdf" required />
+                <label for="cv">Încarcă CV:</label>
+                <input
+                  type="file"
+                  id="cv"
+                  name="cv"
+                  accept=".pdf,.doc,.docx"
+                  required
+                />
 
-                <button type="submit">Trimite CV</button>
+                <button type="submit">Trimite</button>
               </form>
             </div>
 
-            <!-- Card Donează + Formular 230 -->
+            <!-- CARDuri mici dreapta: Donează + Formular 230 -->
             <div class="implica-te-cards-right">
-              <!-- Card Donează -->
-              <div class="implica-te-card">
+              <!-- Donează -->
+              <div class="implica-te-card doneaza">
                 <h3>Donează</h3>
                 <p>
-                  Sprijină activitatea noastră și copiii cu autism prin donații.
-                </p>
-                <p>
-                  Fiecare donație contribuie la oferirea de sesiuni de terapie,
-                  suport educațional și activități de integrare socială pentru
-                  copiii cu autism.
-                </p>
-                <p>
-                  Împreună, putem transforma viețile acestor copii și le putem
-                  oferi oportunități care le vor schimba viitorul.
+                  Contribuția ta ajută direct la crearea unui mediu sigur și
+                  stimulativ pentru copiii cu autism.
                 </p>
                 <a href="pagina_donatii.html" class="btn">Donează acum</a>
               </div>
 
-              <!-- Card Formular 230 -->
-              <div class="implica-te-card-small">
+              <!-- Formular 230 -->
+              <div class="implica-te-card-small formular230">
                 <h3>Formular 230</h3>
                 <p>
-                  Poți descărca și completa Formularul 230 pentru a ne susține
-                  prin redirecționarea a 3.5% din impozitul tău.
+                  Completează formularul 230 pentru a redirecționa 3.5% din
+                  impozitul pe venit către organizația noastră.
                 </p>
-                <a href="formular_230.pdf" target="_blank" download
-                  >Descarcă Formularul 230</a
-                >
+                <a href="formular230.pdf" class="btn">Descarcă formular</a>
               </div>
             </div>
           </div>
         </section>
       </main>
-
       <footer>
         <p>
           Contact: 0747 309 894 | office@....... | Aleea Parva nr 8, bl A35, sc
@@ -116,5 +140,13 @@
         <p>&copy; 2025 AutisticMinds. Toate drepturile rezervate.</p>
       </footer>
     </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
